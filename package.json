@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "cd client && ng build --prod --env=prod"
+    "build": "node index.js && cd client && ng build --prod --env=prod"
   },
   "repository": {
     "type": "git",
@@ -25,12 +25,12 @@
   },
   "homepage": "https://github.com/gugui3z24/MEAN-Stack-With-Angular-2-Tutorial#readme",
   "dependencies": {
+    "@angular/cli": "^7.3.8",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.2",
     "cors": "^2.8.3",
     "express": "^4.15.3",
-    "jsonwebtoken": "^7.4.1",
-    "mongoose": "^5.4.22",
-    "@angular/cli": "^1.1.1"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.4.22"
   }
 }

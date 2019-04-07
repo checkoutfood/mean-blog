@@ -6,7 +6,7 @@ const express = require('express'); // Fast, unopinionated, minimalist web frame
 const app = express(); // Initiate Express Application
 const router = express.Router(); // Creates a new router object.
 const mongoose = require('mongoose'); // Node Tool for MongoDB
-mongoose.Promise = global.Promise;
+//mongoose.Promise = global.Promise;
 const config = require('./config/database'); // Mongoose Config
 const path = require('path'); // NodeJS Package for file paths
 const authentication = require('./routes/authentication')(router); // Import Authentication Routes
@@ -15,7 +15,7 @@ const bodyParser = require('body-parser'); // Parse incoming request bodies in a
 const cors = require('cors'); // CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
 const port = process.env.PORT || 8080; // Allows heroku to set port
 // Database Connection
-mongoose.connect(config.uri, {
+mongoose.connect("mongodb+srv://checkoutfood:checkoutfood123@cluster0-5ffrd.mongodb.net/test?retryWrites=true", {
   useMongoClient: true,
 }, (err) => {
   // Check if database was able to connect
@@ -25,6 +25,7 @@ mongoose.connect(config.uri, {
     console.log('Connected to ' + config.db); // Return success message
   }
 });
+
 
 // Middleware
 app.use(cors({ origin: 'http://localhost:4200' })); // Allows cross origin in development only

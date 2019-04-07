@@ -30,7 +30,7 @@
     "cors": "^2.8.3",
     "express": "^4.15.3",
     "jsonwebtoken": "^7.4.1",
-    "mongoose": "^4.10.2",
+    "mongoose": "^5.4.22",
     "@angular/cli": "^1.1.1"
   }
 }

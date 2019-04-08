@@ -20,9 +20,9 @@ export class RegisterComponent implements OnInit {
   usernameMessage;
 
   constructor(
-    private formBuilder: FormBuilder,
-    private authService: AuthService,
-    private router: Router
+    public formBuilder: FormBuilder,
+    public authService: AuthService,
+    public router: Router
   ) {
     this.createForm(); // Create Angular 2 Form when component loads
   }

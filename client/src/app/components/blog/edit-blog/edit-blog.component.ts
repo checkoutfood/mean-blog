@@ -18,10 +18,10 @@ export class EditBlogComponent implements OnInit {
   loading = true;
 
   constructor(
-    private location: Location,
-    private activatedRoute: ActivatedRoute,
-    private blogService: BlogService,
-    private router: Router
+    public location: Location,
+    public activatedRoute: ActivatedRoute,
+    public blogService: BlogService,
+    public router: Router
   ) { }
 
   // Function to Submit Update

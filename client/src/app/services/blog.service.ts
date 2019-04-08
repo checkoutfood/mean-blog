@@ -9,8 +9,8 @@ export class BlogService {
   domain = this.authService.domain;
 
   constructor(
-    private authService: AuthService,
-    private http: Http
+    public authService: AuthService,
+    public http: Http
   ) { }
 
   // Function to create headers, add token, to be used in HTTP requests

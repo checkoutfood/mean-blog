@@ -14,7 +14,7 @@ export class AuthService {
   options;
 
   constructor(
-    private http: Http
+    public http: Http
   ) { }
 
   // Function to create headers, add token, to be used in HTTP requests

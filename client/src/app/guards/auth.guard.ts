@@ -8,8 +8,8 @@ export class AuthGuard implements CanActivate {
   redirectUrl;
 
   constructor(
-    private authService: AuthService,
-    private router: Router
+    public authService: AuthService,
+    public router: Router
   ) { }
 
   // Function to check if user is authorized to view route

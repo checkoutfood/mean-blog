@@ -17,10 +17,10 @@ export class LoginComponent implements OnInit {
   previousUrl;
 
   constructor(
-    private formBuilder: FormBuilder,
-    private authService: AuthService,
-    private router: Router,
-    private authGuard: AuthGuard
+    public formBuilder: FormBuilder,
+    public authService: AuthService,
+    public router: Router,
+    public authGuard: AuthGuard
   ) {
     this.createForm(); // Create Login Form when component is constructed
   }

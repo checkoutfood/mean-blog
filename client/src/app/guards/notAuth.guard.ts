@@ -5,8 +5,8 @@ import { AuthService } from '../services/auth.service';
 @Injectable()
 export class NotAuthGuard implements CanActivate {
   constructor(
-    private authService: AuthService,
-    private router: Router
+    public authService: AuthService,
+    public router: Router
   ) { }
 
   // Function to determine whether user is authorized to view route

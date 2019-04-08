@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node index.js",
     "build": "node index.js"
-    //"build": "cd client && ng build --prod --env=prod"
   },
   "repository": {
     "type": "git",
